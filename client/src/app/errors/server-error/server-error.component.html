@@ -1,0 +1,17 @@
+<h4>Internal Server Error, Dawg</h4>
+@if (error) {
+  <h5 class="text-danger">Error: {{error.message}}</h5>
+  <p class="font-weight-bold">Note: If you're seeing this error, Angular is probably ok.</p>
+  <p>What are the next steps?</p>
+  <ol>
+    <li>In the Dev Tools, I can check the failing network request in the Network Tab.</li>
+    <li>I examine the URL of the failing request.</li>
+    <li>If I can reproduce the error in Postman, then Angular is all good.</li>
+  </ol>
+  <p class="font-weight-bold">
+    Here's the stack trace.  The first two lines tell which lines of code need attention.
+  </p>
+  <code class="mt-5" style="background-color: whitesmoke;">
+    {{error.details}}
+  </code>
+}
