@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   users: any;
 
   ngOnInit(): void {
-    this.getUsers();
+    // this.getUsers();
   }
 
   registerToggle() {
@@ -29,12 +29,12 @@ export class HomeComponent implements OnInit {
     this.registerMode = event;
   }
 
-  getUsers() {
-    this.http.get(this.baseUrl + 'users').subscribe({
-      next: response => this.users = response,
-      error: error => console.log(error),
-      complete: () => console.log('Request is complete, Rebel')
-    })
-  }
+  // getUsers() {
+  //   this.http.get(this.baseUrl + 'users').subscribe({
+  //     next: response => this.users = response,
+  //     error: error => console.log(error),
+  //     complete: () => console.log('Request is complete, Rebel')
+  //   })
+  // }
 
 }
